@@ -67,7 +67,6 @@ const addManager = () => {
         message: "Enter the manager's office number: (no dash)",
         validate: (input) => {
           if (!isNaN(input)) {
-              let count = 0;
               if (input.length == 10){
                   return true;
               }else{

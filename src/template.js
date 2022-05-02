@@ -11,7 +11,6 @@ module.exports = (team) => {
         <link rel="stylesheet" href="style.css">
         <title>Team Profile Generator</title>
     </head>
-
     <body>
     <!-- Title -->
         <div class="container-fluid">
@@ -21,7 +20,6 @@ module.exports = (team) => {
                 </div>
             </div>
         </div>
-
         <!-- Employee Container -->
         <div class="container">
             <div class="row">
