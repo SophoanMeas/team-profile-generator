@@ -37,47 +37,47 @@ const addManager = () => {
           }
         },
       },
-      // {
-      //   type: "input",
-      //   name: "managerId",
-      //   message: "Enter the manager's ID:",
-      //   validate: (input) => {
-      //     if (input) {
-      //       return true;
-      //     } else {
-      //       error(" Please enter a valid ID!");
-      //     }
-      //   },
-      // },
-      // {
-      //   type: "input",
-      //   name: "managerEmail",
-      //   message: "Enter the manager's email-address:",
-      //   validate: (input) => {
-      //     if (emailValidation.validate(input)) {
-      //       return true;
-      //     } else {
-      //       error(" Please a valid email-address!");
-      //     }
-      //   },
-      // },
-      // {
-      //   type: "input",
-      //   name: "officeNumber",
-      //   message: "Enter the manager's office number: (no dash)",
-      //   validate: (input) => {
-      //     if (!isNaN(input)) {
-      //         let count = 0;
-      //         if (input.length == 10){
-      //             return true;
-      //         }else{
-      //             error(" Please enter a 10 digits phone number!");
-      //         }
-      //     }else{
-      //         error(" Please enter digits only")
-      //     }
-      //   },
-      // },
+      {
+        type: "input",
+        name: "managerId",
+        message: "Enter the manager's ID:",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please enter a valid ID!");
+          }
+        },
+      },
+      {
+        type: "input",
+        name: "managerEmail",
+        message: "Enter the manager's email-address:",
+        validate: (input) => {
+          if (emailValidation.validate(input)) {
+            return true;
+          } else {
+            error(" Please a valid email-address!");
+          }
+        },
+      },
+      {
+        type: "input",
+        name: "officeNumber",
+        message: "Enter the manager's office number: (no dash)",
+        validate: (input) => {
+          if (!isNaN(input)) {
+              let count = 0;
+              if (input.length == 10){
+                  return true;
+              }else{
+                  error(" Please enter a 10 digits phone number!");
+              }
+          }else{
+              error(" Please enter digits only")
+          }
+        },
+      },
     ])
     .then((ans) => {
       const manager = new Manager(

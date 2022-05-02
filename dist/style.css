@@ -1,15 +1,11 @@
 :root {
-    --color-blue: #1b4967cd;
+    --color-blue: #1e92dfcd;
     --color-blue2: #4b8ad7;
-    --color-blue3: #5e60ce;
-    --color-blue4: #6930c3;
-    --color-blue5: #7400b8;
     --prime-color: rgb(255, 249, 249);
 }
 
 * {
     box-sizing: border-box;
-    
 }
 
 body {
