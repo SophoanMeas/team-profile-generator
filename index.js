@@ -20,7 +20,9 @@ function error(string) {
 }
 
 const addManager = () => {
-  console.log(cl.white.bold("Welcome to") + cl.blueBright(" Team Profile Generator"));
+  console.log(
+    cl.white.bold("Welcome to") + cl.blueBright(" Team Profile Generator")
+  );
   return inquirer
     .prompt([
       {
@@ -35,47 +37,47 @@ const addManager = () => {
           }
         },
       },
-        {
-          type: "input",
-          name: "managerId",
-          message: "Enter the manager's ID:",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please enter a valid ID!");
-            }
-          },
-        },
-        {
-          type: "input",
-          name: "managerEmail",
-          message: "Enter the manager's email-address:",
-          validate: (input) => {
-            if (emailValidation.validate(input)) {
-              return true;
-            } else {
-              error(" Please a valid email-address!");
-            }
-          },
-        },
-        {
-          type: "input",
-          name: "officeNumber",
-          message: "Enter the manager's office number: (no dash)",
-          validate: (input) => {
-            if (!isNaN(input)) {
-                let count = 0;
-                if (input.length == 10){
-                    return true;
-                }else{
-                    error(" Please enter a 10 digits phone number!");
-                }
-            }else{
-                error(" Please enter digits only")
-            }
-          },
-        },
+      // {
+      //   type: "input",
+      //   name: "managerId",
+      //   message: "Enter the manager's ID:",
+      //   validate: (input) => {
+      //     if (input) {
+      //       return true;
+      //     } else {
+      //       error(" Please enter a valid ID!");
+      //     }
+      //   },
+      // },
+      // {
+      //   type: "input",
+      //   name: "managerEmail",
+      //   message: "Enter the manager's email-address:",
+      //   validate: (input) => {
+      //     if (emailValidation.validate(input)) {
+      //       return true;
+      //     } else {
+      //       error(" Please a valid email-address!");
+      //     }
+      //   },
+      // },
+      // {
+      //   type: "input",
+      //   name: "officeNumber",
+      //   message: "Enter the manager's office number: (no dash)",
+      //   validate: (input) => {
+      //     if (!isNaN(input)) {
+      //         let count = 0;
+      //         if (input.length == 10){
+      //             return true;
+      //         }else{
+      //             error(" Please enter a 10 digits phone number!");
+      //         }
+      //     }else{
+      //         error(" Please enter digits only")
+      //     }
+      //   },
+      // },
     ])
     .then((ans) => {
       const manager = new Manager(
@@ -105,42 +107,42 @@ const addEngineer = () => {
           }
         },
       },
-        {
-          type: "input",
-          name: "engineerId",
-          message: "Enter the engineer's ID:",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please enter a valid ID!");
-            }
-          },
+      {
+        type: "input",
+        name: "engineerId",
+        message: "Enter the engineer's ID:",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please enter a valid ID!");
+          }
         },
-        {
-          type: "input",
-          name: "engineerEmail",
-          message: "Enter engineer's email-address:",
-          validate: (input) => {
-            if (emailValidation.validate(input)) {
-              return true;
-            } else {
-              error(" Please a valid email address!");
-            }
-          },
+      },
+      {
+        type: "input",
+        name: "engineerEmail",
+        message: "Enter engineer's email-address:",
+        validate: (input) => {
+          if (emailValidation.validate(input)) {
+            return true;
+          } else {
+            error(" Please a valid email address!");
+          }
         },
-        {
-          type: "input",
-          name: "engineerGithub",
-          message: "Enter engineer's gitHub username:",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please enter a valid username!");
-            }
-          },
+      },
+      {
+        type: "input",
+        name: "engineerGithub",
+        message: "Enter engineer's gitHub username:",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please enter a valid username!");
+          }
         },
+      },
     ])
     .then((ans) => {
       const engineer = new Engineer(
@@ -155,71 +157,70 @@ const addEngineer = () => {
     });
 };
 
-const addIntern = () =>{
-    inquirer
-      .prompt([
-        {
-          type: "input",
-          name: "internName",
-          message: "Enter the intern's name:",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please enter a valid username!");
-            }
-          },
+const addIntern = () => {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "internName",
+        message: "Enter the intern's name:",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please enter a valid username!");
+          }
         },
-        {
-          type: "input",
-          name: "internId",
-          message: " Enter the intern's ID",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please enter a valid ID!");
-            }
-          },
+      },
+      {
+        type: "input",
+        name: "internId",
+        message: " Enter the intern's ID",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please enter a valid ID!");
+          }
         },
-        {
-          type: "input",
-          name: "internEmail",
-          message: "Enter intern's email-address:",
-          validate: (input) => {
-            if (emailValidation.validate(input)) {
-              return true;
-            } else {
-              error(" Please a valid email address!");
-            }
-          },
+      },
+      {
+        type: "input",
+        name: "internEmail",
+        message: "Enter intern's email-address:",
+        validate: (input) => {
+          if (emailValidation.validate(input)) {
+            return true;
+          } else {
+            error(" Please a valid email address!");
+          }
         },
-        {
-          type: "input",
-          name: "internSchool",
-          message: "Enter intern's school name:",
-          validate: (input) => {
-            if (input) {
-              return true;
-            } else {
-              error(" Please a valid school name!");
-            }
-          },
+      },
+      {
+        type: "input",
+        name: "internSchool",
+        message: "Enter intern's school name:",
+        validate: (input) => {
+          if (input) {
+            return true;
+          } else {
+            error(" Please a valid school name!");
+          }
         },
-      ])
-      .then((ans) => {
-        const intern = new Intern(
-          ans.internName,
-          ans.internId,
-          ans.internEmail,
-          ans.internSchool
-        );
-        team.push(intern);
-        id.push(ans.internId);
-        addEmployee();
-      });
-  }
-  
+      },
+    ])
+    .then((ans) => {
+      const intern = new Intern(
+        ans.internName,
+        ans.internId,
+        ans.internEmail,
+        ans.internSchool
+      );
+      team.push(intern);
+      id.push(ans.internId);
+      addEmployee();
+    });
+};
 
 const addEmployee = () => {
   return inquirer
@@ -245,29 +246,33 @@ const addEmployee = () => {
     });
 };
 
-
 function init() {
   addManager();
-  // .then(team => {
-  //     return render(team)
-  // })
 }
 
 const generateFile = () => {
+  console.log("");
   console.log("Generating Team Profile.... ");
-  return new Promise((resolve, reject) => {
-    fs.writeFileSync(OUTPUT_PATH, render(team), (err) => {
-      if (err) {
-        console.log(err);
-        reject(err);
-        return;
-      }
-      resolve({
-        ok: true,
-        message: `${fileName} successfully created! Please check out the dist/index.html"`,
-      });
-    });
-  });
+  fs.writeFile(OUTPUT_PATH, render(team), (err) =>
+    err
+      ? console.log(err)
+      : console.log(
+          cl.bgGreenBright.blackBright.bold("Successfully created! Please check out the dist/index.html")
+        )
+  );
+  //   return new Promise((resolve, reject) => {
+  //     fs.writeFileSync(OUTPUT_PATH, render(team), (err) => {
+  //       if (err) {
+  //         console.log(err);
+  //         reject(err);
+  //         return;
+  //       }
+  //       resolve({
+  //         ok: true,
+  //         message: 'successfully created! Please check out the dist/index.html',
+  //       });
+  //     });
+  //   });
 };
 
 init();
