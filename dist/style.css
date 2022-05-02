@@ -1,7 +1,8 @@
 :root {
-    --color-blue: #1e92dfcd;
+    --color-blue: #3482b6cd;
     --color-blue2: #4b8ad7;
     --prime-color: rgb(255, 249, 249);
+    --bg-color:rgba(248, 248, 248, 0.838);
 }
 
 * {
@@ -11,12 +12,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg-color);
 }
 
 .title {
     color: var(--prime-color);
     background-color: var(--color-blue);
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 2px 3px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    box-shadow: rgba(217, 217, 233, 0.664) 0px 0px 0px 1px, rgba(213, 216, 221, 0.774) 0px 2px 3px -1px, rgba(243, 243, 243, 0.08) 0px 1px 0px inset;
 }
 
 .list-group {

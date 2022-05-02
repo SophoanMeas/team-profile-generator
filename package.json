@@ -4,5 +4,11 @@
   },
   "devDependencies": {
     "jest": "^28.0.3"
+  },
+  "dependencies": {
+    "cli-color": "^2.0.2",
+    "inquirer": "^8.2.4",
+    "nodejs-email-validation": "^1.1.1",
+    "path": "^0.12.7"
   }
 }
