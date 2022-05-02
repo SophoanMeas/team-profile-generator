@@ -35,30 +35,30 @@ const addManager = () => {
           }
         },
       },
-    //     {
-    //       type: "input",
-    //       name: "managerId",
-    //       message: "Enter the manager's ID:",
-    //       validate: (input) => {
-    //         if (input) {
-    //           return true;
-    //         } else {
-    //           error(" Please enter a valid ID!");
-    //         }
-    //       },
-    //     },
-    //     {
-    //       type: "input",
-    //       name: "managerEmail",
-    //       message: "Enter the manager's email-address:",
-    //       validate: (input) => {
-    //         if (emailValidation.validate(input)) {
-    //           return true;
-    //         } else {
-    //           error(" Please a valid email-address!");
-    //         }
-    //       },
-    //     },
+        {
+          type: "input",
+          name: "managerId",
+          message: "Enter the manager's ID:",
+          validate: (input) => {
+            if (input) {
+              return true;
+            } else {
+              error(" Please enter a valid ID!");
+            }
+          },
+        },
+        {
+          type: "input",
+          name: "managerEmail",
+          message: "Enter the manager's email-address:",
+          validate: (input) => {
+            if (emailValidation.validate(input)) {
+              return true;
+            } else {
+              error(" Please a valid email-address!");
+            }
+          },
+        },
         {
           type: "input",
           name: "officeNumber",
@@ -101,26 +101,26 @@ const addEngineer = () => {
           if (input) {
             return true;
           } else {
-            error("Please a valid name!");
+            error(" Please a valid name!");
           }
         },
       },
         {
           type: "input",
           name: "engineerId",
-          message: "Enter the Engineer ID:",
+          message: "Enter the engineer's ID:",
           validate: (input) => {
             if (input) {
               return true;
             } else {
-              error("Please enter the Engineer ID!");
+              error(" Please enter a valid ID!");
             }
           },
         },
         {
           type: "input",
           name: "engineerEmail",
-          message: "Enter (engineer) email-address:",
+          message: "Enter engineer's email-address:",
           validate: (input) => {
             if (emailValidation.validate(input)) {
               return true;
@@ -132,12 +132,12 @@ const addEngineer = () => {
         {
           type: "input",
           name: "engineerGithub",
-          message: "Enter (engineer) gitHub username:",
+          message: "Enter engineer's gitHub username:",
           validate: (input) => {
             if (input) {
               return true;
             } else {
-              error("Please enter a valid username!");
+              error(" Please enter a valid username!");
             }
           },
         },
@@ -166,26 +166,26 @@ const addIntern = () =>{
             if (input) {
               return true;
             } else {
-              error("Please enter a valid username!");
+              error(" Please enter a valid username!");
             }
           },
         },
         {
           type: "input",
           name: "internId",
-          message: "Enter the Intern ID",
+          message: " Enter the intern's ID",
           validate: (input) => {
             if (input) {
               return true;
             } else {
-              error("Please enter a valid ID!");
+              error(" Please enter a valid ID!");
             }
           },
         },
         {
           type: "input",
           name: "internEmail",
-          message: "Enter (intern) email-address:",
+          message: "Enter intern's email-address:",
           validate: (input) => {
             if (emailValidation.validate(input)) {
               return true;
@@ -197,7 +197,7 @@ const addIntern = () =>{
         {
           type: "input",
           name: "internSchool",
-          message: "Enter (intern) school name:",
+          message: "Enter intern's school name:",
           validate: (input) => {
             if (input) {
               return true;
