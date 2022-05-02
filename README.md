@@ -50,7 +50,7 @@ N/A
 
 Unit Test with Jest
 
-[<img src="./assets/images/jestlogo.png" width="100" target="_blank">](https://jestjs.io/)
+[<img src="./assets/images/jestlogo.png" width="100" target="_blank"/>](https://jestjs.io/)
 
 Run `npm test` to run Jest to test all the .test.js files
 
