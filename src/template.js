@@ -48,7 +48,7 @@ const createEmployee = (team) => {
         <ul class="list-group text-dark">
             <li class="list-group-item"><i class="card-icon bi-key"></i>ID: ${manager.getId()}</li>
             <li class="list-group-item"><i class="card-icon bi-envelope"></i>Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-            <li class="list-group-item"><i class="card-icon bi-telephone"></i>Office number: <a href="tel:${manager.getOfficeNumber()}">${manager.getOfficeNumber()}</a></li>
+            <li class="list-group-item"><i class="card-icon bi-telephone"></i>Office number: ${manager.getOfficeNumber()}</a></li>
         </ul>
         </div>
     </div>
