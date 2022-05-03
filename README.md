@@ -40,8 +40,6 @@ This app allows the user to generate a team profile web application. This tool a
 - A series of cmd-line prompt questions will guide you through the process. 
 - Provide the necessary information when prompt to add your employee to your team profile.
 - When completed a index.html will be generated in the folder "dist"
-- When prompt for "License" please indicated which license you have added to your repo.
-- A license badge will be added below the project title
 # Contribution
 
 N/A
@@ -82,5 +80,6 @@ Have a question? Feel free to drop me an email.
 ## Screenshot
 ![Alt text](./assets/images/screenshot.png)
 
+- click on the image, will redirect you to the live page
 ## Tutorial Video
-[![](https://github.com/SophoanMeas/professional-readme-generator/blob/main/assets/images/tutorial.png)](https://drive.google.com/drive/folders/1owQdfGeOZITQP7xq83D-n1IsQUndFNci)
+[![](./assets/images/video-tutorial.png)](https://drive.google.com/drive/folders/1owQdfGeOZITQP7xq83D-n1IsQUndFNci)
