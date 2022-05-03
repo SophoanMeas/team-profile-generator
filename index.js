@@ -259,19 +259,6 @@ const generateFile = () => {
           cl.bgGreenBright.blackBright.bold("Successfully created! Please check out the dist/index.html")
         )
   );
-  //   return new Promise((resolve, reject) => {
-  //     fs.writeFileSync(OUTPUT_PATH, render(team), (err) => {
-  //       if (err) {
-  //         console.log(err);
-  //         reject(err);
-  //         return;
-  //       }
-  //       resolve({
-  //         ok: true,
-  //         message: 'successfully created! Please check out the dist/index.html',
-  //       });
-  //     });
-  //   });
 };
 
 init();
