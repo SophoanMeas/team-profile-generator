@@ -82,4 +82,4 @@ Have a question? Feel free to drop me an email.
 
 - click on the image, will redirect you to the live page
 ## Tutorial Video
-[![](./assets/images/video-tutorial.png)](https://drive.google.com/drive/folders/1owQdfGeOZITQP7xq83D-n1IsQUndFNci)
+[![](./assets/images/tutorial.png)](https://drive.google.com/drive/folders/1YYWcJLq1BA4vXzimyM8-N440fhCn9gvu?usp=sharing)
