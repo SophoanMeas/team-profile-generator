@@ -80,6 +80,8 @@ Have a question? Feel free to drop me an email.
 ## Screenshot
 ![Alt text](./assets/images/screenshot.png)
 
-- click on the image, will redirect you to the live page
+
 ## Tutorial Video
+- click on the image, will redirect you to the video
+
 [![](./assets/images/tutorial.png)](https://drive.google.com/drive/folders/1YYWcJLq1BA4vXzimyM8-N440fhCn9gvu?usp=sharing)
